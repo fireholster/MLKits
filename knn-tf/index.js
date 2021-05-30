@@ -5,7 +5,8 @@ const loadCSV = require('./load-csv');
 
 function knn(features, labels, predictionPoint, k) {
 
-    //We will take the mean and variance for the whole feature set and then use it to standardize each item
+    //We will take the mean and variance for the whole feature set and 
+    //then use it to standardize each item.
     const { mean, variance } = tf.moments(features, 0);
 
     //sqrt of a variance is standard deviation

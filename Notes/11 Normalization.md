@@ -1,15 +1,15 @@
-# Linear Regression
+# Normalization
 
+Scale all memebers b/w 0 & 1
 
-## Downloading
+Min/max can be used to normalize data
 
+Normalized value 'data' = ('data' - min) / (max - min);
 
-### Zip Download
-
-
-### Git Download
+## When to use
+If the distribution of data is mostly consistent. 
 
 
 ```
-git clone https://github.com/StephenGrider/MLKits.git
+
 ```

@@ -35,7 +35,7 @@ There is a way though that computers can use to tell how wrong we are in terms o
 
 
  ### Side Note Derivatives
- YOu want to know the slope at any location - use derivatives
+ You want to know the slope at any location - use derivatives
 
  - negative value of derivative, can tell slope is leaning left or coming down
  - positive value of the derivative, can tell slope is leaning right or going up
@@ -57,9 +57,37 @@ There is a way though that computers can use to tell how wrong we are in terms o
  - Learning rate helps get the guessed value converge on gradient descent.
  - The learning rate is a hyperparameter that controls how much to change the model in response to the estimated error each time the model weights are updated. 
 
+## Calculation Accuracy
+
+- Coefficient for Determination
+  - SS(tot)
+    - Sum of Squares of total
+    - Property of dataset
+    - 
+  - SS(res)
+    - sum of squares of residual
+    - depends on predicted value
 
 
+## Multivariate Regression
+
+### Multivariate linear regression
+y = b + (m1 * Weight) + (m2 * Displacement) + (m3 * hp)
+
+## Learning Rate Optimization
+
+  ### Method to adjust Learning Rate
+  - Adam
+  - Adagrad
+  - RMSProp
+  - Momentum
+
+ ### Our Custom Learning Rate Optimation 
+   - With ever GD, calculate MSE and save it
+   - Another GD run, get MSE for it and compare it with what was saved in previous step.
+   - IF MSE went up, the bad update, so divide learning rate by 2
+   - IF MSE went down, increase Learning rate by 5%.
 
 
-
+  
 
