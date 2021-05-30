@@ -1,5 +1,8 @@
 
 This is from a course from Stephen. Please visit his repo to see how things started.
+
+Hop on to the discord channel and get your queries answered 
+https://discord.com/channels/797239171730505839/797250811431747584
 ______________________________________________________________________________________________
 
 ## What is in this Repo
@@ -9,5 +12,8 @@ ________________________________________________________________________________
     -  Feel free to reach out in case of any queries
 
  - Notes Folder in the repo can help do quick revisits for various topics (Work in-progress) 
+
+
+
 
 
