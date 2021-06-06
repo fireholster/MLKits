@@ -3,6 +3,7 @@ require("@tensorflow/tfjs-node-gpu");
 const tf = require('@tensorflow/tfjs-node-gpu');
 const LineRegression = require('./linear-regression');
 const loadCSV = require('./load-csv');
+const plot = require('node-remote-plot');
 
 let { features, labels, testFeatures, testLabels } = loadCSV('./cars.csv', {
 
@@ -14,7 +15,7 @@ let { features, labels, testFeatures, testLabels } = loadCSV('./cars.csv', {
 
 const regression = new LineRegression(features, labels, {
 
-    learningRate: .1,
+    learningRate: 0.1,
     iterations: 100
 });
 
@@ -32,5 +33,13 @@ regression.train();
 
  const r2 = regression.test(testFeatures, testLabels);
 
- console.log('Accuracy: ', r2)
- console.log('Running Backend:' , tf.getBackend());
+ plot({
+
+     x : regression.bHistory,
+     y: regression.historyMSE.reverse(),
+     xLabel: "Value of b",
+     yLabel: "MSE"
+ });
+
+ console.log('Accuracy: ', r2 + ''.red);
+ console.log('Running Backend:' , tf.getBackend(), ''.red);

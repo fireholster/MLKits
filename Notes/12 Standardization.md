@@ -11,7 +11,7 @@ var standardized 'data' = (
   - sqrt of variance
   - A measure that is used to quantify the amount of variation or   dispersion of a set of data values.
 
-- Variance - expecteations of squred deviations
+- Variance - expectations of squred deviations
 
 
 ## When to use

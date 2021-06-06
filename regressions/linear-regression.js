@@ -1,4 +1,5 @@
 const tf = require('@tensorflow/tfjs-node-gpu');
+const colors = require('colors');
 const _ = require('lodash');
 
 class LinearRegression {
@@ -49,6 +50,7 @@ class LinearRegression {
 
         //used for learning rate optimization
         this.historyMSE = [];
+        this.bHistory = [];
     }
 
     slowGradientDescent() {
@@ -102,7 +104,8 @@ class LinearRegression {
     train() {
 
         for (let i = 0; i < this.options.iterations; i++) {
-
+            
+            this.bHistory.push(this.weights.arraySync()[0]);
             //this.slowGradientDescent();
             this.fastGradientDescent();
 
@@ -189,7 +192,6 @@ class LinearRegression {
     updateLearningRate() {
 
         //Ensure we have enough runs done for mse history to update learning rate.
-
         if (this.historyMSE.length < 2) {
             return;
         }

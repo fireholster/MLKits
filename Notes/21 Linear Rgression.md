@@ -1,7 +1,7 @@
 # Linear Regression
 
 ## Goal & Definition
-Equation to relate independent variable predict a dependent variable. You can have any number of dependent and independent variables.
+Equation to relate an independent variable to predict a dependent variable. You can have any number of dependent and independent variables.
 
 e.g Equation to take a lot size and figure out the pice of the lot.
 
@@ -10,13 +10,13 @@ e.g Equation to take a lot size and figure out the pice of the lot.
 - Ordinary Least Sqaures
 - Generalized Least Squares
 - Gradient Descent
- -etc
+- etc
 
-## Gradiet Descent
+## Gradient Descent
 
 We can tell how bad our guess is based on the information we are looking at but Computers can't tell how bad your equation is by simply looking at data.
 
-There is a way though that computers can use to tell how wrong we are in terms of propbability. 
+There is a way though that computers can use to tell how wrong we are in terms of probability. 
 
 ![Mean Squared Error](images/MSE.JPG)
 
